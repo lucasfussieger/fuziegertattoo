@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import photo from "../assets/fuziegertattoo.webp";
 import {
   Camera,
   MessageCircle,
@@ -60,10 +61,11 @@ export default function Home() {
             />
             <Image
               className="animate-fade-up relative aspect-square rounded-full object-cover ring-2 ring-red-500/60 ring-offset-4 ring-offset-neutral-950"
-              src="/fuziegertattoo.png"
+              src={photo}
               alt="Lucas Fuzieger, tatuador"
               width={168}
               height={168}
+              placeholder="blur"
               priority
             />
           </div>
