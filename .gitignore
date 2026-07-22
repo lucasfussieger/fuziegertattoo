@@ -13,6 +13,9 @@
 # testing
 /coverage
 
+# local anamnese submissions (fallback sem DATABASE_URL)
+/data
+
 # next.js
 /.next/
 /out/

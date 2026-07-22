@@ -48,6 +48,18 @@ body {
   }
 }
 
+@keyframes glow-pulse-strong {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.25);
+  }
+}
+
 @keyframes float {
   0%,
   100% {
@@ -95,6 +107,10 @@ body {
   animation: glow-pulse 4s ease-in-out infinite;
 }
 
+.animate-glow-pulse-strong {
+  animation: glow-pulse-strong 2.6s ease-in-out infinite;
+}
+
 .animate-float {
   animation: float 5s ease-in-out infinite;
 }
@@ -102,6 +118,7 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-up,
   .animate-glow-pulse,
+  .animate-glow-pulse-strong,
   .animate-float,
   .animate-fade-in,
   .animate-pop {
